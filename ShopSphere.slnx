@@ -1,0 +1,13 @@
+<Solution>
+  <Folder Name="/src/" />
+  <Folder Name="/src/Catalog/">
+    <Project Path="Catalog.API/Catalog.API.csproj" />
+    <Project Path="Catalog.Application/Catalog.Application.csproj" />
+    <Project Path="Catalog.Domain/Catalog.Domain.csproj" />
+    <Project Path="Catalog.Infrastructure/Catalog.Infrastructure.csproj" />
+  </Folder>
+  <Folder Name="/tests/">
+    <Project Path="Catalog.IntegrationTest/Catalog.IntegrationTest.csproj" Id="ae96e1c0-0610-4f2d-9464-8dbcc29daeb7" />
+    <Project Path="Catalog.UnitTests/Catalog.UnitTests.csproj" />
+  </Folder>
+</Solution>

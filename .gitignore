@@ -1,0 +1,75 @@
+# ===== Build output =====
+[Bb]in/
+[Oo]bj/
+[Dd]ebug/
+[Rr]elease/
+x64/
+x86/
+[Aa]rm/
+[Aa]rm64/
+[Ll]og/
+[Ll]ogs/
+artifacts/
+publish/
+out/
+
+# ===== Logs =====
+logs/
+*.log
+
+# ===== Visual Studio / Rider / VS Code =====
+.vs/
+.idea/
+.vscode/*
+!.vscode/settings.json
+!.vscode/tasks.json
+!.vscode/launch.json
+!.vscode/extensions.json
+*.user
+*.suo
+*.userosscache
+*.sln.docstates
+*.rsuser
+*.DotSettings.user
+_ReSharper*/
+
+# ===== NuGet =====
+*.nupkg
+*.snupkg
+**/packages/*
+!**/packages/build/
+*.nuget.props
+*.nuget.targets
+project.lock.json
+project.fragment.lock.json
+
+# ===== Tests / coverage =====
+[Tt]est[Rr]esult*/
+[Bb]uild[Ll]og.*
+*.trx
+*.coverage
+*.coveragexml
+coverage*.json
+coverage*.xml
+coverage*.info
+TestResults/
+
+# ===== Secrets / local config =====
+.env
+.env.*
+appsettings.*.local.json
+appsettings.Local.json
+secrets.json
+*.pfx
+
+# ===== Local databases =====
+*.db
+*.db-shm
+*.db-wal
+*.mdf
+*.ldf
+
+# ===== OS files =====
+.DS_Store
+Thumbs.db
+Desktop.ini
