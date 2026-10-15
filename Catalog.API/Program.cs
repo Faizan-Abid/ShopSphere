@@ -2,6 +2,8 @@ using Catalog.API.Middleware;
 using Catalog.Application;
 using Catalog.Infrastructure;
 using Serilog;
+using Catalog.Infrastructure.Data;
+using Microsoft.EntityFrameworkCore;
 
 Log.Logger = new LoggerConfiguration()
     .WriteTo.Console()
@@ -35,6 +37,11 @@ try
     {
         app.MapOpenApi();
         app.UseSwaggerUI(o => o.SwaggerEndpoint("/openapi/v1.json", "Catalog API"));
+        using (var scope = app.Services.CreateScope())
+        {
+            var db = scope.ServiceProvider.GetRequiredService<CatalogDbContext>();
+            db.Database.Migrate();
+        }
     }
 
     app.UseHttpsRedirection();
